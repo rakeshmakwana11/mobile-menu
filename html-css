@@ -1,0 +1,84 @@
+ <div class="mobile-menu">
+                    <div class="mobile-nav">
+                        <i style="font-size: 30px;" class="fa-solid fa-xmark"></i>
+                    </div>
+                    <div class="mobile-links">
+                        <ul>
+                            <li><a href="#"></a>Home</li>
+                            <li><a href="#"></a>Shop</li>
+                            <li><a href="#"></a>Accesories</li>
+                            <li><a href="#"></a>lookbook</li>
+                            <li><a href="#"></a>Blog</li>
+                            <li><a href="#"></a>contact</li>
+                        </ul>
+                    </div>
+                </div>
+
+
+                
+/* /////////////////////////////////////////mobile-menu///////////////////////// */
+.mobile-menu {
+    width: 0%;
+    height: 600px;
+    position: absolute;
+    right: 0%;
+    top: 0;
+    background-color: #dec18c;
+    overflow: hidden;
+    transition: ease-in-out 1s;
+    z-index: 99;
+
+}
+
+header {
+    position: relative;
+}
+
+.mobile-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+}
+
+.mobile-links ul {
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.mobile-links a,
+li {
+    font-size: 16px;
+    font-family: Montserrat-Regular;
+    display: inline-block;
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+
+}
+
+
+
+li::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #dec18c;
+    transition: width .3s;
+}
+
+.mobile-links li::after {
+    background: #000;
+
+}
+
+li:hover::after {
+    width: 100%;
+
+}
